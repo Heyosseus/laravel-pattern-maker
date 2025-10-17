@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespace }}\{{ subject }}ObserverInterface;
+
+class {{ class }} implements {{ subject }}ObserverInterface
+{
+    public function update($data)
+    {
+        // TODO: Implement observer logic here
+    }
+}

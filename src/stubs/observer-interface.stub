@@ -1,0 +1,8 @@
+<?php
+
+namespace {{ namespace }};
+
+interface {{ class }}ObserverInterface
+{
+    public function update($data);
+}

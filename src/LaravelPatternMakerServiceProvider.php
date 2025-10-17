@@ -7,6 +7,7 @@ use Heyosseus\LaravelPatternMaker\Commands\MakeAdapterCommand;
 use Heyosseus\LaravelPatternMaker\Commands\MakeStrategyCommand;
 use Heyosseus\LaravelPatternMaker\Commands\MakeDecoratorCommand;
 use Heyosseus\LaravelPatternMaker\Commands\MakeFactoryCommand;
+use Heyosseus\LaravelPatternMaker\Commands\MakeObserverCommand;
 
 class LaravelPatternMakerServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,7 @@ class LaravelPatternMakerServiceProvider extends ServiceProvider
         MakeStrategyCommand::class,
         MakeDecoratorCommand::class,
         MakeFactoryCommand::class,
+        MakeObserverCommand::class,
       ]);
     }
 
