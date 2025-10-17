@@ -50,7 +50,7 @@ class MakeStrategyCommand extends Command
 
   protected function createStrategyInterface($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/strategy-interface.stub';
+    $stubPath = __DIR__ . '/../stubs/strategy/strategy-interface.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Strategy/{$name}StrategyInterface.php");
 
     if (!$filesystem->exists($stubPath)) {
@@ -71,7 +71,7 @@ class MakeStrategyCommand extends Command
 
   protected function createContext($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/strategy-context.stub';
+    $stubPath = __DIR__ . '/../stubs/strategy/strategy-context.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Strategy/{$name}Context.php");
 
     if (!$filesystem->exists($stubPath)) {
@@ -92,7 +92,7 @@ class MakeStrategyCommand extends Command
 
   protected function createConcreteStrategy($filesystem, $name, $strategy, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/strategy-concrete.stub';
+    $stubPath = __DIR__ . '/../stubs/strategy/strategy-concrete.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Strategy/{$strategy}.php");
 
     if (!$filesystem->exists($stubPath)) {

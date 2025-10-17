@@ -41,7 +41,7 @@ class MakeDecoratorCommand extends Command
 
   protected function createInterface($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/decorator-interface.stub';
+    $stubPath = __DIR__ . '/../stubs/decorator/decorator-interface.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Decorator/{$name}ComponentInterface.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Decorator interface stub not found: {$stubPath}");
@@ -55,7 +55,7 @@ class MakeDecoratorCommand extends Command
 
   protected function createBase($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/decorator-base.stub';
+    $stubPath = __DIR__ . '/../stubs/decorator/decorator-base.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Decorator/{$name}Component.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Decorator base stub not found: {$stubPath}");
@@ -69,7 +69,7 @@ class MakeDecoratorCommand extends Command
 
   protected function createDecorator($filesystem, $name, $decorator, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/decorator-decorator.stub';
+    $stubPath = __DIR__ . '/../stubs/decorator/decorator-decorator.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Decorator/{$decorator}.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Decorator stub not found: {$stubPath}");

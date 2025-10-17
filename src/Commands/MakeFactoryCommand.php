@@ -41,7 +41,7 @@ class MakeFactoryCommand extends Command
 
   protected function createInterface($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/factory-interface.stub';
+    $stubPath = __DIR__ . '/../stubs/factory/factory-interface.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Factory/{$name}FactoryInterface.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Factory interface stub not found: {$stubPath}");
@@ -55,7 +55,7 @@ class MakeFactoryCommand extends Command
 
   protected function createFactory($filesystem, $name, $namespace, $products)
   {
-    $stubPath = __DIR__ . '/../stubs/factory-factory.stub';
+    $stubPath = __DIR__ . '/../stubs/factory/factory-factory.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Factory/{$name}Factory.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Factory class stub not found: {$stubPath}");
@@ -81,7 +81,7 @@ class MakeFactoryCommand extends Command
 
   protected function createProduct($filesystem, $product, $namespace, $factoryName)
   {
-    $stubPath = __DIR__ . '/../stubs/factory-product.stub';
+    $stubPath = __DIR__ . '/../stubs/factory/factory-product.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Factory/{$product}.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Factory product stub not found: {$stubPath}");

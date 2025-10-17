@@ -41,7 +41,7 @@ class MakeObserverCommand extends Command
 
   protected function createObserverInterface($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/observer-interface.stub';
+    $stubPath = __DIR__ . '/../stubs/observer/observer-interface.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Observer/{$name}ObserverInterface.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Observer interface stub not found: {$stubPath}");
@@ -55,7 +55,7 @@ class MakeObserverCommand extends Command
 
   protected function createSubject($filesystem, $name, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/observer-subject.stub';
+    $stubPath = __DIR__ . '/../stubs/observer/observer-subject.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Observer/{$name}Subject.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Observer subject stub not found: {$stubPath}");
@@ -69,7 +69,7 @@ class MakeObserverCommand extends Command
 
   protected function createConcreteObserver($filesystem, $name, $observer, $namespace)
   {
-    $stubPath = __DIR__ . '/../stubs/observer-concrete.stub';
+    $stubPath = __DIR__ . '/../stubs/observer/observer-concrete.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Observer/{$observer}.php");
     if (!$filesystem->exists($stubPath)) {
       $this->error("Observer stub not found: {$stubPath}");

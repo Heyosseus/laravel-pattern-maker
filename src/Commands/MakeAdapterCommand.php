@@ -40,7 +40,7 @@ class MakeAdapterCommand extends Command
 
   protected function createInterface($filesystem, $name, $namespace)
   {
-    $interfaceStub = __DIR__ . '/../stubs/adapter-interface.stub';
+    $interfaceStub = __DIR__ . '/../stubs/adapter/adapter-interface.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Adapter/{$name}Interface.php");
 
     if (!$filesystem->exists($interfaceStub)) {
@@ -61,7 +61,7 @@ class MakeAdapterCommand extends Command
 
   protected function createAdapter($filesystem, $name, $adaptee, $adapteeImport, $namespace)
   {
-    $adapterStub = __DIR__ . '/../stubs/adapter-class.stub';
+    $adapterStub = __DIR__ . '/../stubs/adapter/adapter-class.stub';
     $outputPath = $this->laravel->basePath("app/Patterns/Adapter/{$name}.php");
 
     if (!$filesystem->exists($adapterStub)) {
