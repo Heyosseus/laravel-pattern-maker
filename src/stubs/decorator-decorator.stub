@@ -1,0 +1,23 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ namespace }}\{{ base }}ComponentInterface;
+
+class {{ class }} implements {{ base }}ComponentInterface
+{
+    protected {{ base }}ComponentInterface $component;
+
+    public function __construct({{ base }}ComponentInterface $component)
+    {
+        $this->component = $component;
+    }
+
+    public function operation(...$args)
+    {
+        // Decorator logic before
+        $result = $this->component->operation(...$args);
+        // Decorator logic after
+        return $result;
+    }
+}

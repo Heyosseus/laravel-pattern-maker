@@ -1,0 +1,12 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}Component implements {{ class }}ComponentInterface
+{
+    public function operation(...$args)
+    {
+        // Base operation logic
+        return $args;
+    }
+}
