@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/heyosseus/laravel-pattern-maker.svg?style=flat-square)](https://packagist.org/packages/heyosseus/laravel-pattern-maker)
 [![Total Downloads](https://img.shields.io/packagist/dt/heyosseus/laravel-pattern-maker.svg?style=flat-square)](https://packagist.org/packages/heyosseus/laravel-pattern-maker)
-[![License](https://img.shields.io/packagist/l/heyosseus/laravel-pattern-maker.svg?style=flat-square)](https://packagist.org/packages/heyosseus/laravel-pattern-maker)
+[![License](https://img.shields.io/packagist/l/heyosseus/laravel-pattern-maker.svg?style=flat-square)](LICENSE)
 
 A Laravel package for quickly generating design pattern boilerplate code. Stop writing repetitive pattern structures and focus on implementing your business logic!
 
