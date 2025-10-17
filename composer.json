@@ -1,0 +1,37 @@
+{
+  "name": "heyosseus/laravel-pattern-maker",
+  "description": "A design pattern maker for laravel",
+  "keywords": [
+    "laravel",
+    "design-pattern",
+    "package"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Heyosseus\\LaravelPatternMaker\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Rati Rukhadze",
+      "email": "ratiruxadzee@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.0|^8.1|^8.2|^8.3",
+    "illuminate/support": "^12.34",
+    "illuminate/console": "^12.34",
+    "illuminate/filesystem": "^12.34"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Heyosseus\\LaravelPatternMaker\\LaravelPatternMakerServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ adapteeImport }};
+
+class {{ class }} implements {{ class }}Interface
+{
+    protected {{ adaptee }} $adaptee;
+
+    public function __construct({{ adaptee }} $adaptee)
+    {
+        $this->adaptee = $adaptee;
+    }
+
+    public function handle(...$args)
+    {
+        return $this->adaptee->handle(...$args);
+    }
+}
