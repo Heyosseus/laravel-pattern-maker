@@ -1,0 +1,14 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}Factory implements {{ class }}FactoryInterface
+{
+    public function create(string $type)
+    {
+        switch ($type) {
+{{ product_cases }}            default:
+                throw new \InvalidArgumentException('Unknown product type: ' . $type);
+        }
+    }
+}
