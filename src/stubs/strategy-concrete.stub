@@ -1,0 +1,13 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }} implements {{ interface }}StrategyInterface
+{
+    public function execute(...$args)
+    {
+        // TODO: Implement your strategy logic here
+        
+        return $args;
+    }
+}

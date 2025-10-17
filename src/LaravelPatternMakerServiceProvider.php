@@ -4,6 +4,7 @@ namespace Heyosseus\LaravelPatternMaker;
 
 use Illuminate\Support\ServiceProvider;
 use Heyosseus\LaravelPatternMaker\Commands\MakeAdapterCommand;
+use Heyosseus\LaravelPatternMaker\Commands\MakeStrategyCommand;
 
 class LaravelPatternMakerServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,7 @@ class LaravelPatternMakerServiceProvider extends ServiceProvider
     if ($this->app->runningInConsole()) {
       $this->commands([
         MakeAdapterCommand::class,
+        MakeStrategyCommand::class,
       ]);
     }
 

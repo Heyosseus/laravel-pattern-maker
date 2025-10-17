@@ -1,0 +1,23 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}Context
+{
+    protected {{ class }}StrategyInterface $strategy;
+
+    public function __construct({{ class }}StrategyInterface $strategy)
+    {
+        $this->strategy = $strategy;
+    }
+
+    public function setStrategy({{ class }}StrategyInterface $strategy): void
+    {
+        $this->strategy = $strategy;
+    }
+
+    public function executeStrategy(...$args)
+    {
+        return $this->strategy->execute(...$args);
+    }
+}
